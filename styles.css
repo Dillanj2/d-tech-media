@@ -86,6 +86,82 @@ body {
     background-color: #0ea5e9;
 }
 
+/* --- Sección de Contacto --- */
+.contact-subtitle {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    color: var(--text-muted);
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--bg-light);
+    border: 1px solid #334155;
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+}
+
+.contact-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Colores específicos de iconos */
+.icon-wp { color: #25d366; }
+.icon-mail { color: #38bdf8; }
+.icon-maps { color: #ef4444; }
+
+.contact-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Botones de acción general */
+.btn-action {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, opacity 0.3s;
+    color: #ffffff;
+}
+
+/* Colores específicos de botones */
+.btn-wp { background-color: #25d366; color: #fff; }
+.btn-wp:hover { background-color: #1ebd59; }
+
+.btn-mail { background-color: #0284c7; }
+.btn-mail:hover { background-color: #0369a1; }
+
+.btn-maps { background-color: #dc2626; }
+.btn-maps:hover { background-color: #b91c1c; }
+
 /* Pie de página */
 footer {
     background-color: #0f172a;
