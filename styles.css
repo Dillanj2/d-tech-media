@@ -184,3 +184,146 @@ footer {
     color: var(--accent);
     font-weight: bold;
 }
+
+/* --- Nuevos Estilos para la Subpágina de Servicios --- */
+.services-page-container {
+    min-height: 90vh;
+    padding-top: 120px;
+    padding-bottom: 4rem;
+    background-color: var(--bg-dark);
+}
+
+.services-section-exclusive {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.services-section-exclusive h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+.services-subtitle {
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 0 auto 4rem auto;
+    font-size: 1.1rem;
+}
+
+.services-grid-exclusive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.service-card-exclusive {
+    background-color: var(--bg-light);
+    border: 1px solid #334155;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    width: 360px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.service-card-exclusive:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px -10px rgba(56, 189, 248, 0.15);
+}
+
+.icon-exclusive {
+    font-size: 3.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+}
+
+.service-card-exclusive h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.card-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    min-height: 45px;
+}
+
+/* Listas internas de características */
+.service-features {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    flex-grow: 1; /* Empuja el botón al fondo para que todas las tarjetas se alineen perfectamente */
+}
+
+.service-features li {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* Pequeño punto azul decorativo antes de cada elemento */
+.service-features li::before {
+    content: "•";
+    color: var(--accent);
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Botón de acción para servicios */
+.btn-service-action {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-service-action:hover {
+    background-color: var(--accent);
+    color: var(--bg-dark);
+}
+
+/* Botón alternativo para el Home */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.btn-outline {
+    border: 2px solid #475569;
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: border-color 0.3s, background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    border-color: var(--text-main);
+    background-color: rgba(255, 255, 255, 0.05);
+}
